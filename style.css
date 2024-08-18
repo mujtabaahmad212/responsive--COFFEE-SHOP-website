@@ -262,4 +262,530 @@
     font-size: 40px;
   }
   
+    /* Small Screen */
+    @media(max-width:1000px) {
+  
+     /* Navigation Bar */
+   #logo img{
+     width: 70px;
+     height: 70px;
+     padding-left: 30px;
+   }
+   
+   .navbtn{
+     padding-right: 50px;
+   }
+   .navbtn a{
+     padding: 10px 10px;
+  }
+  
+  /* Home */
+  
+  .home-heading{
+    padding: 150px 50px;
+  }
+  .home-heading h1{
+    font-size:35px;
+  }
+  h1 em{
+  font-size: 50px;
+  }
+  .home-heading button{
+    padding: 8px;
+    margin-top: 8px;
+    
+  }
+  .Offer{
+    margin-top: -70px;
+    margin-left: -70px;
+  
+  }
+  .Offer img{
+    width: 300px;
+  }
+  .contentimg img{
+    width: 400px;
+  }
+  
+   
+  
+    /* Coffee */
+    
+    .coffee-container{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 90px;
+    }
+    .coffee-container .coffee-cup{
+      width: 190px;
+      height: 190px;
+    
+    background-color: rgb(255, 196, 0) ;
+    background-size: cover;
+    color: #000000;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    box-shadow: #767676 10px 10px 20px ;
+    
+    .coffee-cup img{
+      width: 150px;
+      height: 130px;
+      position: relative;
+      top: -40px;
+      border-radius: 50%;
+    }
+    .coffee-cup h2{
+      margin-top: -15px;
+    }
+    .coffee-cup p{
+      font-size: 13px;
+      padding: 5px;
+    }
+    
+  /* Image-text */
+  .image-text{
+  
+    padding: 40px 10px;
+    margin-top: 30px;
+  }
+  .image-text img{
+    width:33%;
+  }
+  .image-text p{
+    padding: 10px 20px;
+    font-size: 2.6vh;
+    font-weight: 450;
+  } 
+  
+  /* Cold Coffee */
+    .cold-cofe-conatiner .cofe-cup{
+      width: 180px;
+      height: 260px;
+    }
+   
+  .cold-cofe-conatiner .cofe-cup h4{
+    font-size: 2.9vh;
+  
+
+  }
+ 
+  
+  /* Beans */
+  
+  .beans-container{
+  display: grid;
+  grid-template-columns: 30% 30%;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  }
+  .beans-container div{
+    width: 250px;
+    height: 250px;
+  }
+  .beans-container  img{
+    position: relative;
+    top: -150px;
+    width: 240px;
+  }
+  .beans-container p{
+    margin-top: -180px;
+    font-size: 25px;
+  }
+  
+  #heading{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    text-decoration: underline;
+    font-size: 30px;
+  }
+  
+  }
+  
+  /* Tab Screens */
+  @media(max-width:780px) {
+    /* Navigation Bar */
+  #logo img{
+    width: 60px;
+    height: 60px;
+  }
+  .navbtn a{
+    padding: 5px;
+    font-size:2.7vh;
+  }
+  
+  /* Home */
+  
+  
+  .home-heading{
+    padding: 150px 20px;
+  }
+  .home-heading h1{
+    font-size:25px;
+  }
+  h1 em{
+  font-size: 40px;
+  }
+  .home-heading img{
+    width: 15px;
+    padding: 5px;
+   
+  }
+  .home-heading p{
+    font-size: small;
+  }
+  .home-heading button{
+    padding: 15px;
+   
+  }
+  .Offer{
+    margin-top: -70px;
+    margin-left: -70px;
+  
+  }
+  .Offer img{
+    width: 300px;
+  }
+  .contentimg img{
+    width: 300px;
+  }
+  
+  
+  /* Coffee */
+  .coffee-container .coffee-cup{
+    width: 150px;
+    height: 170px;
+  }
+  
+  .coffee-cup img{
+    width: 120px;
+    height: 100px;
+  }
+  .coffee-cup h2{
+    font-size: medium;
+    margin-top: -20px;
+  }
+  .coffee-cup p{
+  font-size: 1.7vh;
+  }
+  
+  /* Image-text */
+  .image-text{
+  padding: 40px 0px;
+    margin-top: 30px;
+  }
+  .image-text img{
+    width:30%;
+  }
+  .image-text p{
+    font-size: 2vh;
+    font-weight: 400;
+    padding:0 20px;
+  }
+  
+  /* Cold */
+    .cold-cofe-conatiner {
+      display: grid;
+      grid-template-columns: 30% 30%; 
+      justify-content:space-evenly; 
+      align-items: center;
+      margin-top: 50px;
+      gap: 30px;
+    }
+    
+    .cold-cofe-conatiner .cofe-cup {
+      width: 220px;
+      height: 255px;
+    }
+    
+    .cold-cofe-conatiner img {
+      padding: 30px 40px;
+      width: 100px;
+      height: 150px;
+    }
+  
+    /* Beans */
+  
+    .beans-container{
+      display: grid;
+      grid-template-columns: 30% 30%;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      }
+      .beans-container div{
+        width: 220px;
+        height: 220px;
+      }
+      .beans-container  img{
+        position: relative;
+        top: -150px;
+        width: 240px;
+      }
+      .beans-container p{
+        margin-top: -180px;
+        font-size: 15px;
+      }
+  
+      /* Footer */
+  footer{
+    margin-top: 150px;
+    padding-top: 50px;
+  }
+  
+  footer ul li{
+    font-size: small;
+  }
+  footer ul img{
+    width: 15px;
+    padding: 5px;
+  }
+  
+  #heading{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  }
+  
+  @media(max-width:740px) {
+    .home{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   
+  
+      
+
+    }
+.home-heading{
+  height: 170px;
+  margin: 0;
+  padding: 50px 0px 0px 0px ;
+}
+.contentimg {
+  height: 300px;
+  padding: 0;
+ margin-left: 60px;
+  
+ 
+}
+    .contentimg img{
+     margin-left: 30px;
+      width: 300px;
+    }
+    
+    .home-heading h1{
+     
+      font-size:9vh;
+    }
+    h1 em{
+      font-size: 10vh;
+      }
+      .home-heading button{
+        padding: 10px;
+        margin-left: 05px;
+        font-size: 1.9vh;
+         width: 100%;
+    
+      }
+      
+  }
+  
+  
+   /* Mobile  */
+   @media(max-width:400px) {
+    /* Navigation Bar */
+  #logo img{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  .navbtn{
+    padding-right: 10px;
+  }
+  .navbtn a{
+    padding: 5px 05px;
+    font-size: 1.6vh;
+  }
+  
+  /* Home */
+  
+  .contentimg{
+    height: 200px;
+  }
+  .contentimg img{
+    margin-left: 20px;
+    width: 200px;
+    padding: 0;
+    
+  }
+  .home-heading{
+    padding: 20px 0px 0px 0px;
+  }
+  .home-heading h1{
+    font-size:5vh;
+  }
+  h1 em{
+  font-size: 6vh;
+  }
+  .home-heading img{
+    width: 10px;
+    padding: 2px;
+    margin: 08px 0px;
+    margin-bottom: 0;
+    margin-left: 0px;
+  }
+  .home-heading p{
+    font-size: 1.9vh;
+  }
+  .home-heading button{
+    width: 100%;
+    padding: 10px;
+    margin-left: 05px;
+    font-size: 1.9vh;
+
+  }
+  .Offer{
+    margin-top: -40px;
+  }
+  .Offer img{
+    width: 140px;
+  }
+  .home-image img{
+    width: 300px;
+  }
+  .home-image img{
+    width: 140px;
+  }
+  
+  
+  /* Coffee */
+  .coffee-container{
+  display: grid;
+  grid-template-columns: 1;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom:70px ;
+  }
+  .coffee-container .coffee-cup{
+    width: 250px;
+    height: 220px;
+  }
+  
+  .coffee-cup img{
+    width: 180px;
+    height: 150px;
+  }
+  .coffee-cup h2{
+    margin-top: -15px;
+  }
+  .coffee-cup p{
+    font-size: 13px;
+    padding: 10px;
+    
+  }
+  /* Image text */
+  .image-text{
+    display:grid;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .image-text img{
+    width: 140px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+   }
+  .image-text p{
+    font-size:2.6vh;
+    font-weight: 300;
+     margin-right: 0px;
+    text-align: justify;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Cold */
+  .cold-cofe-conatiner {
+    display: grid;
+    grid-template-columns:65%; 
+    justify-content:space-evenly; 
+    align-items: center;
+    margin-top: -10px;
+    gap: 30px;
+  }
+  
+  .cold-cofe-conatiner .cofe-cup {
+    width: 220px;
+    height: 250px;
+  }
+  
+  .cold-cofe-conatiner img {
+    padding: 30px 40px;
+    width: 100px;
+    height: 150px;
+  }
+  
+  /* Beans */
+  .beans-container{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 30px;
+    }
+    .beans-container div{
+      width: 250px;
+      height: 250px;
+    }
+    .beans-container  img{
+      position: relative;
+      top: -150px;
+      width: 240px;
+    }
+    .beans-container p{
+      margin-top: -180px;
+      font-size: 20px;
+    }
+  
+    /* Footer */
+  
+    footer{
+      margin-top: 100px;
+      padding-top: 50px;
+    }
+    footer ul li{
+      font-size: 1.3vh;
+    }
+    footer h4{
+      font-size: 1.4vh;
+    }
+    footer ul img{
+      width: 10px;
+      padding: 2px;
+    }
+  
+    #heading{
+      text-align: center;
+      padding-bottom: 60px;
+      padding-top: 40px;
+      text-decoration: underline;
+      font-size: 15px;
+    }
+    }
+    }
+  
+  
+  
   
