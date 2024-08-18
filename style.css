@@ -230,5 +230,36 @@
     margin-top: -150px;
   }
   
- 
+  /* Footer */
+  footer{
+    background-color: #fceb05;
+    background-size: cover;
+    display: flex;
+    margin-top: 150px;
+    border-radius: 70% 0px 0px;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+  }
+  footer ul{
+    margin-bottom: 20px;
+  }
+  footer h4{
+    margin-bottom: 20px;
+  }
+  footer ul li{
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    padding-top: 05px;
+  }
+
+  
+  #heading{
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    
+    font-size: 40px;
+  }
+  
   
