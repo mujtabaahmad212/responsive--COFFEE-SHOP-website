@@ -25,12 +25,12 @@
   }
   
   .navbtn{
-    margin-top: 20px;
-    padding-right: 60px;
+    
+    padding-right: 40px;
   }
   .navbtn a{
     color: black;
-    background-color: #efefef;
+    background-color: #ffffff;
     border-radius: 20px;
     text-align: center;
     padding: 10px 20px;
