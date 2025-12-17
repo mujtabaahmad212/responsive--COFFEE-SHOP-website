@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Coffee Shop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="./assets/logo.png" alt="Logo" /></a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="navbtn" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="beans.html">Beans</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/pexels-caffeine-27744201.jpg');">
+        <h1>Our Menu</h1>
+        <p>Expertly crafted beverages for every taste</p>
+    </header>
+
+    <!-- Hot Coffee -->
+    <section id="coffee">
+        <h2 class="section-heading">Hot Classics</h2>
+        <div class="coffee-container">
+            <!-- Item 1 -->
+            <div class="coffee-cup" data-aos="fade-up" data-aos-delay="100">
+                <div class="img-box">
+                    <img src="./assets/Cappuccino.png" alt="Cappuccino" />
+                </div>
+                <div class="cup-details">
+                    <h2>Cappuccino</h2>
+                    <p class="size">Small / Medium / Large</p>
+                    <p class="ingredients">A rich blend of espresso, steamed milk, and a thick layer of foam.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="coffee-cup" data-aos="fade-up" data-aos-delay="200">
+                <div class="img-box">
+                    <img src="./assets/Espressoo-removebg-preview.png" alt="Espresso" />
+                </div>
+                <div class="cup-details">
+                    <h2>Espresso</h2>
+                    <p class="size">Single / Double</p>
+                    <p class="ingredients">Pure coffee intensity. Rich, aromatic, and bold with a golden crema.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="coffee-cup" data-aos="fade-up" data-aos-delay="300">
+                <div class="img-box">
+                    <img src="./assets/Latte-removebg-preview.png" alt="Latte" />
+                </div>
+                <div class="cup-details">
+                    <h2>Caffè Latte</h2>
+                    <p class="size">Medium / Large</p>
+                    <p class="ingredients">Smooth espresso combined with steamed milk and a light layer of foam.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="coffee-cup" data-aos="fade-up" data-aos-delay="100">
+                <div class="img-box">
+                    <img src="./assets/americano-removebg-.png" alt="Americano" />
+                </div>
+                <div class="cup-details">
+                    <h2>Americano</h2>
+                    <p class="size">Medium / Large</p>
+                    <p class="ingredients">Espresso shots topped with hot water to produce a light layer of crema.</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="coffee-cup" data-aos="fade-up" data-aos-delay="200">
+                <div class="img-box">
+                    <img src="./assets/flat_white-removebg-preview.png" alt="Flat White" />
+                </div>
+                <div class="cup-details">
+                    <h2>Flat White</h2>
+                    <p class="size">Small / Medium</p>
+                    <p class="ingredients">Smooth ristretto shots of espresso with velvety micro-foamed milk.</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="coffee-cup" data-aos="fade-up" data-aos-delay="300">
+                <div class="img-box">
+                    <img src="./assets/mocha-removebg-preview.png" alt="Mocha" />
+                </div>
+                <div class="cup-details">
+                    <h2>Caffè Mocha</h2>
+                    <p class="size">Medium / Large</p>
+                    <p class="ingredients">Espresso with bittersweet mocha sauce and steamed milk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cold Coffee -->
+    <section id="cold-coffee" style="background-color: var(--white);">
+        <h2 class="section-heading">Cold Brews & Iced</h2>
+        <div class="cold-cofe-conatiner">
+            <div class="cofe-cup" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./assets/iced_capici.png" alt="Iced Cappuccino" />
+                <div class="text-body">
+                    <h4>Iced Cappuccino</h4>
+                    <p style="font-size: 0.8rem; margin-top: 5px; color: var(--white); opacity: 0.9;">Frothy & Chilled
+                    </p>
+                </div>
+            </div>
+            <div class="cofe-cup" data-aos="zoom-in" data-aos-delay="200">
+                <img src="./assets/Iced-Espresso.png" alt="Iced Espresso" />
+                <div class="text-body">
+                    <h4>Iced Espresso</h4>
+                    <p style="font-size: 0.8rem; margin-top: 5px; color: var(--white); opacity: 0.9;">Bold & Refreshing
+                    </p>
+                </div>
+            </div>
+
+            <div class="cofe-cup" data-aos="zoom-in" data-aos-delay="300">
+                <img src="./assets/Iced-Caffe-Mocha.png" alt="Iced Mocha" />
+                <div class="text-body">
+                    <h4>Iced Mocha</h4>
+                    <p style="font-size: 0.8rem; margin-top: 5px; color: var(--white); opacity: 0.9;">Chocolatey Bliss
+                    </p>
+                </div>
+            </div>
+
+            <div class="cofe-cup" data-aos="zoom-in" data-aos-delay="400">
+                <img src="./assets/Iced_Flat BIT_CREAM-.png" alt="Iced Flat White" />
+                <div class="text-body">
+                    <h4>Iced Flat White</h4>
+                    <p style="font-size: 0.8rem; margin-top: 5px; color: var(--white); opacity: 0.9;">Smooth & Creamy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Privacy</h4>
+                <ul>
+                    <li>Terms Of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li>Location</li>
+                    <li>Our Story</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li>Pricing</li>
+                    <li>Jobs</li>
+                </ul>
+            </div>
+            <div class="footer-col offers">
+                <h4>We Accept</h4>
+                <div class="offer-icons">
+                    <i class="fab fa-cc-visa" style="font-size: 2rem; color: white;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 2rem; color: white;"></i>
+                    <i class="fab fa-apple-pay" style="font-size: 2rem; color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.navbtn');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+        });
+    </script>
+</body>
+
+</html>

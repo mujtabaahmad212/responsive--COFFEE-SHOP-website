@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Coffee Shop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="./assets/logo.png" alt="Logo" /></a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="navbtn" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="beans.html">Beans</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/6af457cd-0704-44a4-916b-324aad1a1078.jpg');">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you</p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Visit Us</h3>
+                <p>Come have a cup of coffee with us.</p>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>123 Coffee Lane, Brew City, BC 10012</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>hello@onecupcoffee.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 7am - 8pm</p>
+                        <p>Sat-Sun: 8am - 9pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper" data-aos="fade-left">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Privacy</h4>
+                <ul>
+                    <li>Terms Of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li>Location</li>
+                    <li>Our Story</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li>Pricing</li>
+                    <li>Jobs</li>
+                </ul>
+            </div>
+            <div class="footer-col offers">
+                <h4>We Accept</h4>
+                <div class="offer-icons">
+                    <i class="fab fa-cc-visa" style="font-size: 2rem; color: white;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 2rem; color: white;"></i>
+                    <i class="fab fa-apple-pay" style="font-size: 2rem; color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.navbtn');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+        });
+    </script>
+</body>
+
+</html>

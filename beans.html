@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beans | Coffee Shop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="./assets/logo.png" alt="Logo" /></a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="navbtn" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="beans.html" class="active">Beans</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header"
+        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./assets/pexels-adi-surya-1668992685-27775254.jpg');">
+        <h1>Premium Beans</h1>
+        <p>Sourced from the world's best coffee regions</p>
+    </header>
+
+    <!-- Beans -->
+    <section id="beans">
+        <h2 class="section-heading">Our Selection</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem;">
+            We take pride in our ethically sourced beans. Roasted to perfection to bring out unique flavor profiles.
+        </p>
+        <div class="beans-container">
+            <div class="bean-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="bean-img">
+                    <img src="./assets/Robusta-fotor-bg-remover-20240814171535.png" alt="Robusta" />
+                </div>
+                <p>
+                    <strong>Robusta Gold</strong>
+                    <span style="display: block; font-size: 0.9rem; margin-top: 5px; color: #666;">Vietnam</span>
+                    <br />
+                    Strong, bold, and earthy. High caffeine content for the ultimate wake-up call.
+                </p>
+            </div>
+
+            <div class="bean-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="bean-img">
+                    <img src="./assets/arabica-fotor-bg-remover-20240814171332.png" alt="Arabica" />
+                </div>
+                <p>
+                    <strong>Arabica Reserve</strong>
+                    <span style="display: block; font-size: 0.9rem; margin-top: 5px; color: #666;">Ethiopia</span>
+                    <br />
+                    Floral notes with a hint of citrus. Smooth, complex, and aromatic.
+                </p>
+            </div>
+
+            <div class="bean-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="bean-img">
+                    <img src="./assets/espresso-fotor-bg-remover-20240814171458.png" alt="Espresso" />
+                </div>
+                <p>
+                    <strong>Espresso Roast</strong>
+                    <span style="display: block; font-size: 0.9rem; margin-top: 5px; color: #666;">Colombia</span>
+                    <br />
+                    Dark roasted beans delivering a rich, caramel-like sweetness and heavy body.
+                </p>
+            </div>
+
+            <div class="bean-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="bean-img">
+                    <img src="./assets/caturra-fotor-bg-remover-20240814171418.png" alt="Caturra" />
+                </div>
+                <p>
+                    <strong>Caturra Special</strong>
+                    <span style="display: block; font-size: 0.9rem; margin-top: 5px; color: #666;">Brazil</span>
+                    <br />
+                    Bright acidity with a medium body. Notes of chocolate and nuts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Privacy</h4>
+                <ul>
+                    <li>Terms Of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li>Location</li>
+                    <li>Our Story</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li>Pricing</li>
+                    <li>Jobs</li>
+                </ul>
+            </div>
+            <div class="footer-col offers">
+                <h4>We Accept</h4>
+                <div class="offer-icons">
+                    <i class="fab fa-cc-visa" style="font-size: 2rem; color: white;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 2rem; color: white;"></i>
+                    <i class="fab fa-apple-pay" style="font-size: 2rem; color: white;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.navbtn');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+        });
+    </script>
+</body>
+
+</html>
